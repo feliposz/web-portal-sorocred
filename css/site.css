@@ -1,0 +1,288 @@
+html {
+    position: relative;
+    min-height: 100%;
+}
+
+body {
+    margin-bottom: 120px;
+    font-family: 'Century Gothic', 'Questrial', 'Twentieth Century', 'Futura', sans-serif;
+    overflow-y: scroll;
+}
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 110px;
+    padding-top: 5px;
+    background-color: #AFABAA;
+}
+
+@media (min-width: 992px) {
+    body {
+        margin-bottom: 60px;
+    }
+}
+
+@media (min-width: 992px) {
+    .footer {
+        height: 55px;
+        padding-top: 5px;
+    }
+}
+
+.footer a, .footer a:hover, .footer a:focus {
+    color: #F2F1EF;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.footer span.glyphicon {
+    color: #DCDCDC;
+    font-size: 22px;
+}
+
+.table {
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+
+    .table > tbody > tr, .table > thead > tr, .table > tfood > tr {
+        border-top: 0px;
+        border-bottom: 1px solid #ccc;
+    }
+
+        .table > tbody > tr > td, .table > tbody > tr > th, .table > tfoot > tr > td, .table > tfoot > tr > th, .table > thead > tr > td, .table > thead > tr > th {
+            padding: 1px 5px 1px 5px;
+            vertical-align: middle;
+            border-top: 0px;
+        }
+
+code {
+    font-size: 80%;
+}
+
+
+.navbar {
+    border-top: 3px solid rgb(51, 185, 72);
+    background: #D5DCE6;
+    margin-bottom: 5px;
+}
+
+    .navbar .usuario {
+        font-style: italic;
+    }
+
+.navbar-nav > li > a {
+    line-height: 40px;
+    font-size: 115%;
+}
+
+/* Fonte: http://www.cssmatic.com/gradient-generator */
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .open > a {
+    background: #B1BAC9; /* Old Browsers */
+    background: -moz-linear-gradient(left, #B1BAC9 0%, #D5DCE6 10%, #D5DCE6 90%, #B1BAC9 100%); /* FF3.6+ */
+    background: -webkit-gradient(left top, right top, color-stop(0%, #B1BAC9), color-stop(10%, #D5DCE6), color-stop(90%, #D5DCE6), color-stop(100%, #B1BAC9)); /* Chrome, Safari4+ */
+    background: -webkit-linear-gradient(left, #B1BAC9 0%, #D5DCE6 10%, #D5DCE6 90%, #B1BAC9 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(left, #B1BAC9 0%, #D5DCE6 10%, #D5DCE6 90%, #B1BAC9 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(left, #B1BAC9 0%, #D5DCE6 10%, #D5DCE6 90%, #B1BAC9 100%); /* IE 10+ */
+    background: linear-gradient(to right, #B1BAC9 0%, #D5DCE6 10%, #D5DCE6 90%, #B1BAC9 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#B1BAC9', endColorstr='#B1BAC9', GradientType=1 ); /* IE6-9 */
+}
+
+.navbar-brand {
+    padding: 7px 80px 7px 0px;
+    height: 70px;
+}
+
+.navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+    margin-left: 15px;
+}
+
+@media (min-width: 768px) {
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+        margin-left: 0px;
+    }
+}
+
+hr {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    border: 0;
+    border-top: 2px solid #ccc;
+}
+
+.quadro {
+    background-color: rgb(238, 238, 238);
+    padding: 5px;
+    margin: 5px 0;
+    border-left: 5px solid #000;
+}
+
+    .quadro h2 {
+        font-size: 18px;
+        margin-top: 3px;
+        padding: 5px 0px 12px 10px;
+        border-bottom: 2px solid #ccc;
+        text-transform: uppercase;
+        font-weight: bold;
+    }
+
+    .quadro > h2 > a, .quadro > h2 > a:hover, .quadro > h2 > a:focus {
+        color: inherit;
+        text-decoration: none;
+    }
+
+    .quadro h2 button {
+        float: right;
+        margin-top: -8px;
+    }
+
+    .quadro span {
+        font-weight: normal;
+    }
+
+    .quadro .titulo {
+        font-weight: bold;
+    }
+
+    .quadro .valor {
+        font-weight: bold;
+    }
+
+    .quadro .data {
+        font-weight: bold;
+    }
+
+.quadro-cartao {
+    border-left-color: rgb(17, 170, 227);
+    color: #888;
+}
+
+    .quadro-cartao h2 {
+        color: #888;
+        text-transform: none;
+    }
+
+    .quadro-cartao img {
+        margin-bottom: 10px;
+    }
+
+.cartao-saldo {
+    color: rgb(51, 185, 72);
+}
+
+.quadro-cartao dl {
+    margin-right: 10px;
+    margin-bottom: 0px;
+    line-height: 1;
+}
+
+@media (min-width: 768px) {
+    .quadro-cartao dl {
+        text-align: right;
+    }
+}
+
+.quadro-cartao dt, dd {
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.quadro-cartao h2 small {
+    text-transform: none;
+    font-size: 80%;
+    display: block;
+}
+
+@media (min-width: 768px) {
+    .quadro-cartao h2 small {
+        font-size: 80%;
+        float: right;
+        display: inline;
+        padding-top: 3px;
+    }
+}
+
+@media (min-width: 992px) {
+    .quadro-cartao h2 small {
+        font-size: 65%;
+        padding-top: 5px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .quadro-cartao h2 small {
+        font-size: 80%;
+        padding-top: 3px;
+    }
+}
+
+.quadro-banner {
+    border: 0px;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+.quadro-servicos {
+    border-left-color: rgb(47, 116, 181);
+}
+
+    .quadro-servicos h2 {
+        color: rgb(47, 116, 181);
+    }
+
+.quadro-atividades {
+    border-left-color: rgb(223, 44, 50);
+}
+
+    .quadro-atividades h2 {
+        color: rgb(223, 44, 50);
+    }
+
+.quadro-faturas {
+    border-left-color: rgb(104, 58, 182);
+}
+
+    .quadro-faturas h2 {
+        color: rgb(104, 58, 182);
+    }
+
+    .quadro-faturas > table > tbody > tr {
+        border-bottom: 0px;
+    }
+
+svg circle.indicador-fat-proxima {
+    fill: rgb(47, 116, 181);
+}
+
+svg circle.indicador-fat-atual {
+    fill: rgb(223, 44, 50);
+}
+
+svg circle.indicador-fat-anterior {
+    fill: rgb(51, 185, 72);
+}
+
+.quadro-limite {
+    border-left-color: rgb(51, 185, 72);
+}
+
+    .quadro-limite h2 {
+        color: rgb(51, 185, 72);
+    }
+
+.glyphicon-big {
+    font-size: 200%;
+}
+
+.vcenter {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.tabela-faturas > tbody > tr, .tabela-faturas > thead > tr, .tabela-faturas > tfood > tr, .tabela-faturas > thead > tr > th {
+    border-bottom: 0px;
+}
